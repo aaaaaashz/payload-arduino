@@ -1,0 +1,83 @@
+============================================================
+ PAYLOAD ARDUINO - LIBRARY DEPENDENCIES
+============================================================
+
+The firmware (payload_arduino.ino) depends on the libraries
+listed below. Built-in libraries ship with the Arduino IDE
+and do not need to be installed separately.
+
+Install third-party libraries through the Arduino IDE:
+    Sketch -> Include Library -> Manage Libraries...
+and search by the name shown in "Library Manager name".
+
+------------------------------------------------------------
+ BUILT-IN (no installation required)
+------------------------------------------------------------
+
+Wire
+    Version : bundled with Arduino IDE
+    Purpose : I2C communication with MPU-6050 and BMP388
+    Docs    : https://www.arduino.cc/en/Reference/Wire
+
+SPI
+    Version : bundled with Arduino IDE
+    Purpose : SPI communication with microSD card
+    Docs    : https://www.arduino.cc/en/Reference/SPI
+
+SD
+    Version : bundled with Arduino IDE
+    Purpose : FAT16/FAT32 filesystem access on microSD
+    Docs    : https://www.arduino.cc/en/Reference/SD
+
+------------------------------------------------------------
+ THIRD-PARTY (install via Library Manager)
+------------------------------------------------------------
+
+OneWire
+    Library Manager name : OneWire
+    Author               : Jim Studt, Tom Pollard, Robin James, et al.
+    Tested version       : 2.3.7 or later
+    Purpose              : 1-Wire bus protocol used by the DS18B20
+    Install link         : https://www.arduino.cc/reference/en/libraries/onewire/
+    GitHub               : https://github.com/PaulStoffregen/OneWire
+
+DallasTemperature
+    Library Manager name : DallasTemperature
+    Author               : Miles Burton
+    Tested version       : 3.11.0 or later
+    Purpose              : High-level driver for DS18B20 / DS18S20 / DS1822
+    Install link         : https://www.arduino.cc/reference/en/libraries/dallastemperature/
+    GitHub               : https://github.com/milesburton/Arduino-Temperature-Control-Library
+
+Adafruit BMP3XX Library
+    Library Manager name : Adafruit BMP3XX Library
+    Author               : Adafruit
+    Tested version       : 2.1.5 or later
+    Purpose              : BMP388 barometric pressure driver
+                           (planned full integration - see roadmap)
+    Install link         : https://www.arduino.cc/reference/en/libraries/adafruit-bmp3xx-library/
+    GitHub               : https://github.com/adafruit/Adafruit_BMP3XX
+    Also requires        : Adafruit BusIO, Adafruit Unified Sensor
+                           (Library Manager will offer to auto-install)
+
+MPU6050 (optional alternative driver)
+    Library Manager name : MPU6050 by Electronic Cats
+    Author               : Electronic Cats / Jeff Rowberg fork
+    Tested version       : 1.4.1 or later
+    Purpose              : Optional drop-in replacement for the
+                           low-level register-access code in this sketch
+    Install link         : https://www.arduino.cc/reference/en/libraries/mpu6050/
+    GitHub               : https://github.com/ElectronicCats/mpu6050
+
+------------------------------------------------------------
+ INSTALLATION CHECKLIST
+------------------------------------------------------------
+
+  [ ] Arduino IDE 1.8.x or 2.x installed
+  [ ] Board package: Arduino AVR Boards (for Nano / ATmega328P)
+  [ ] OneWire installed
+  [ ] DallasTemperature installed
+  [ ] Adafruit BMP3XX Library installed (+ BusIO + Unified Sensor)
+  [ ] (Optional) MPU6050 by Electronic Cats installed
+  [ ] FAT32-formatted microSD card inserted
+  [ ] payload_arduino.ino opens without "library not found" errors
