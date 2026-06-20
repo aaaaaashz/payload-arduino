@@ -31,7 +31,7 @@ This payload is part of a study on how lipid vesicle stability is affected by th
 
 | Quantity            | Sensor    | Rate    | Range / Resolution           |
 |---------------------|-----------|---------|------------------------------|
-| 3-axis acceleration | MPU-6050  | 100 Hz  | ±16 g, 16-bit                |
+| 3-axis acceleration | MPU-6050  | 100 Hz  | ±20 g, 16-bit                |
 | 3-axis angular rate | MPU-6050  | 100 Hz  | ±250 °/s, 16-bit             |
 | Temperature         | DS18B20   | 1 Hz    | -55 to +125 °C, 12-bit       |
 | Pressure / altitude | BMP388    | 1 Hz    | 300–1250 hPa                 |
@@ -191,7 +191,3 @@ payload arduino/
 - [ ] Optional onboard buzzer for post-recovery location.
 
 ---
-
-## License
-
-Specify your license here (e.g., MIT). If unsure, the [MIT License](https://choosealicense.com/licenses/mit/) is a reasonable default for hobby and academic projects.
